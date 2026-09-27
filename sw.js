@@ -1,4 +1,4 @@
-const CACHE = "my-first-language-book-v5";
+const CACHE = "my-first-language-book-v6";
 const ASSETS = [
   "./",
   "./index.html",
@@ -7,6 +7,7 @@ const ASSETS = [
   "./manifest.webmanifest",
   "./data/vocabulary.json",
   "./icons/icon.svg",
+  "./images/cover_image.png",
   "./images/001.jpg",
   "./images/002.jpg",
   "./images/003.jpg",
