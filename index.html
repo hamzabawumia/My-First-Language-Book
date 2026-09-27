@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fff7e6">
+  <meta name="description" content="My First Language Book — 200 picture prompts for learning any language.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <title>My First Language Book</title>
+</head>
+<body>
+  <main id="app" class="app">
+    <section id="cover" class="screen cover-screen">
+      <div class="cover-art" aria-hidden="true">👶📖🌍</div>
+      <p class="eyebrow">A picture book for every language</p>
+      <h1>My First<br>Language Book</h1>
+      <p class="subtitle">200 pictures for little learners</p>
+      <button id="startBtn" class="primary-btn">Start the book</button>
+      <button id="aboutBtn" class="text-btn">For parents</button>
+    </section>
+
+    <section id="reader" class="screen reader-screen" hidden>
+      <header class="topbar">
+        <button id="homeBtn" class="icon-btn" aria-label="Back to cover">⌂</button>
+        <div class="progress-wrap">
+          <div class="progress"><div id="progressBar"></div></div>
+          <span id="progressText">1 / 200</span>
+        </div>
+        <button id="fullscreenBtn" class="icon-btn" aria-label="Full screen">⛶</button>
+      </header>
+
+      <div id="card" class="picture-card" tabindex="0" aria-label="Picture">
+        <div id="visual" class="visual" aria-hidden="true"></div>
+      </div>
+
+      <div class="controls">
+        <button id="prevBtn" class="nav-btn" aria-label="Previous picture">‹</button>
+        <button id="nextBtn" class="nav-btn next" aria-label="Next picture">›</button>
+      </div>
+
+      <div class="hint">Swipe or tap the arrows</div>
+    </section>
+
+    <section id="about" class="modal" hidden>
+      <div class="modal-card">
+        <button id="closeAbout" class="close-btn" aria-label="Close">×</button>
+        <h2>For parents</h2>
+        <p>This book deliberately has no written vocabulary. Point to a picture and say its name in the language you want your child to learn.</p>
+        <p>The first version uses friendly emoji as temporary artwork. The picture system is separated from the book, so custom illustrations can be added later without changing the app.</p>
+        <p>For best results, repeat familiar pictures often and use the same word consistently.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
